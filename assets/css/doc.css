@@ -118,16 +118,32 @@ figure {
 /*header*/
 .header_sec {
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
 }
 
 .nav_top {
   margin: 0px;
-  padding: 0px;
+  padding: 15px 0;
   background: none;
   border: none;
   min-height: auto;
   box-shadow: none;
   border-radius: 0px;
+}
+.nav_top .navbar-brand {
+  max-width: 180px;
+  margin: 0;
+  padding: 0;
+}
+.nav_top .navbar-brand img {
+  width: auto;
+  max-width: 100%;
+}
+.nav_top .orngBtn {
+  margin-left: 15px;
 }
 .drop-nav {
   position: absolute;
@@ -140,7 +156,24 @@ figure {
 .menu_sec li {
   position: relative;
 }
-
+.menu_sec li a {
+  display: inline;
+  padding: 10px 15px;
+  color: #000;
+  font-weight: 500;
+}
+.menu_sec li.actv a,
+.menu_sec li a:hover {
+  color: #f75023;
+}
+.header_sec.fixed {
+  position: fixed;
+  background: #fff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+}
+.header_sec.fixed .nav_top .navbar-brand {
+  max-width: 130px;
+}
 .container {
   max-width: 1440px;
 }
@@ -158,6 +191,7 @@ h2 {
   font-weight: 500;
   color: #000;
   font-family: "Open Sans";
+  padding-bottom: 25px;
 }
 h3 {
   font-size: 30px;
@@ -167,8 +201,8 @@ h3 {
   font-family: "Open Sans";
 }
 h4 {
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 25px;
+  line-height: 32px;
   font-weight: 500;
   color: #000;
   font-family: "Open Sans";
@@ -180,13 +214,6 @@ h5 {
   color: #f75023;
   font-family: "Open Sans";
 }
-h5 span {
-  font-size: 24px;
-  line-height: 32px;
-  font-weight: 500;
-  color: #000;
-  font-family: "Open Sans";
-}
 h6 {
   font-size: 18px;
   line-height: 30px;
@@ -194,20 +221,183 @@ h6 {
   color: #000;
   font-family: "Open Sans";
 }
+p {
+  padding-bottom: 10px;
+}
 .orngBtn {
-  font-size: 16px;
-  line-height: 30px;
   font-weight: 500;
-  color: #000;
+  color: #fff;
   font-family: "Open Sans";
   border: 2px solid #f75023;
   border-radius: 50px;
   display: inline-block;
-  padding: 10px 35px;
+  padding: 8px 25px;
+  background: #f75023;
 }
 .orngBtn:hover {
   background: none;
   color: #000;
+}
+.banner_sec {
+  background: url("../images/banner-bg-1.jpg") no-repeat center center / cover;
+  padding: 200px 0 80px;
+  position: relative;
+}
+.banner_row {
+  align-items: center;
+}
+.banner_content h4 {
+  color: #f75023;
+}
+.banner_content h5 {
+  padding: 20px 0;
+}
+.banner_content h5 span {
+  color: #1cbe59;
+}
+.banner_img {
+  position: relative;
+}
+.banner_main_img {
+  max-width: 100%;
+  width: auto;
+  -webkit-mask-image: url("../images/JFD-Profile-mask-1-1.png");
+  -webkit-mask-size: contain;
+  -webkit-mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+}
+.banner_sm_img1,
+.banner_sm_img2,
+.banner_sm_img3 {
+  width: 50px;
+  position: absolute;
+  animation: logo-object 4s linear infinite;
+}
+.banner_sm_img1 {
+  left: 15%;
+  top: 8%;
+}
+.banner_sm_img2 {
+  right: 25%;
+  top: 20%;
+}
+.banner_sm_img3 {
+  left: 28%;
+  bottom: 4%;
+}
+@keyframes logo-object {
+  0% {
+    transform: translateY(-7px);
+  }
+  50% {
+    transform: translateY(7px);
+  }
+  100% {
+    transform: translateY(-7px);
+  }
+}
+.banner_social_container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 20px;
+}
+.banner_social_container .orngBtn {
+  margin-right: 25px;
+}
+.social_box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.social_box a {
+  font-size: 18px;
+  color: #000;
+  transition: 0.5s all;
+}
+.social_box a:hover {
+  color: #f75023;
+}
+.switch_btn {
+  color: #000;
+  font-size: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+}
+.switch_btn:hover {
+  color: #f75023;
+}
+.quality_sec {
+  padding: 80px 0;
+  text-align: center;
+}
+.quality_box {
+  padding: 0 30px;
+}
+.quality_box img {
+  width: 90px;
+  margin-bottom: 30px;
+}
+.quality_box h4 {
+  padding-bottom: 25px;
+}
+.about_sec {
+  padding: 80px 0;
+  background: url("../images/1-1-1.png") no-repeat top left 150px,
+    url("../images/2-1-1.png") no-repeat bottom right, #fff;
+}
+.about_row {
+  align-items: center;
+}
+.about_content .orngBtn {
+  margin-top: 20px;
+}
+.about_img {
+  position: relative;
+}
+.about_main_img {
+  -webkit-mask-image: url(../images/JFD-Profile-mask-2-1-1.png);
+  -webkit-mask-size: contain;
+  -webkit-mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+  max-width: 100%;
+  width: auto;
+}
+.success_box {
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 25px 0px 65px 0px rgba(54.000000000000036, 32, 152, 0.11);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 260px;
+  position: absolute;
+  background: #fff;
+}
+.success_box1 {
+  top: 30%;
+  left: 8%;
+}
+.success_box2 {
+  bottom: 5%;
+  right: 10%;
+}
+.success_box b {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 60px;
+}
+.success_box1 b {
+  color: #1cbe59;
+}
+.success_box2 b {
+  color: #6e50f0;
+}
+.success_box h6 {
+  padding-left: 15px;
 }
 
 @media (min-width: 992px) and (max-width: 9000px) {
