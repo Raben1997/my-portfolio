@@ -23,7 +23,7 @@
 
 
 
-	<header class="header_sec">
+	<header class="header_sec" id="navigation-menu">
 		<div class="container">
 			<nav class="navbar navbar-expand-lg nav_top">
 				<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="logo" /></a>
@@ -36,17 +36,20 @@
 				</button>
 				<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 					<ul class="navbar-nav menu_sec">
-						<li class="actv"><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Testimonials</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="#banner">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#testimonial">Testimonials</a></li>
+						<!-- <li><a href="#">Blog</a></li> -->
+						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
 				<a href="#" class="orngBtn">Download CV</a>
 			</nav>
+		</div>
+		<div class="page-progress-container">
+			<div class="page-progress-bar" id="pageprogressBar"></div>
 		</div>
 	</header>
 
@@ -54,7 +57,7 @@
 
 
 	<main>
-		<section class="banner_sec">
+		<section class="banner_sec" id="banner">
 			<div class="container">
 				<div class="row banner_row">
 					<div class="col-md-6 banner_content">
@@ -84,9 +87,9 @@
 					</div>
 				</div>
 			</div>
-			<a href="#url" class="switch_btn"><i class="fa-thin fa-toggle-off fa-rotate-90"></i></a>
+			<a href="#quality" class="switch_btn"><i class="fa-thin fa-toggle-off fa-rotate-90"></i></a>
 		</section>
-		<section class="quality_sec">
+		<section class="quality_sec" id="quality">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4">
@@ -116,7 +119,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="about_sec">
+		<section class="about_sec" id="about">
 			<div class="container">
 				<div class="row about_row">
 					<div class="col-md-6">
@@ -148,7 +151,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="portfolio_sec">
+		<section class="portfolio_sec" id="portfolio">
 			<div class="container">
 				<h5>Portfolio</h5>
 				<h2>My Works</h2>
@@ -242,7 +245,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="skill_sec">
+		<section class="skill_sec" id="skills">
 			<div class="container">
 				<div class="row skill_row">
 					<div class="col-md-6">
@@ -294,7 +297,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="services_sec">
+		<section class="services_sec" id="services">
 			<div class="container">
 				<h5>Services</h5>
 				<h2>How I Help Clients</h2>
@@ -359,8 +362,188 @@
 				</div>
 			</div>
 		</section>
+		<section class="testimonial_sec" id="testimonial">
+			<div class="container">
+				<h5>Testimonials</h5>
+				<h2>What My Clients Say</h2>
+				<p>Examine the comments left by pleased customers, which demonstrate the influence that <br> my work has
+					had on the enhancement of their internet presence and the growth of their businesses.</p>
+				<div class="owl-carousel">
+					<div class="item">
+						<div class="testimonial_box">
+							<p>I rarely like to write reviews, but the JFD team truly deserve a standing ovation for
+								their customer support, customisation and most importantly, friendliness and
+								professionalism. Many thanks once again for everything and hope that I get to deal with
+								you again in the near future. </p>
+							<div class="testimonial_profile">
+								<img src="assets/images/testmonial-1-1.jpg" alt="testmonial" class="testimonial_img">
+								<div class="testimonial_profile_details">
+									<h5>John Doe</h5>
+									<p>WP Developer</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="testimonial_box">
+							<p>I rarely like to write reviews, but the JFD team truly deserve a standing ovation for
+								their customer support, customisation and most importantly, friendliness and
+								professionalism. Many thanks once again for everything and hope that I get to deal with
+								you again in the near future. </p>
+							<div class="testimonial_profile">
+								<img src="assets/images/testmonial-1-1.jpg" alt="testmonial" class="testimonial_img">
+								<div class="testimonial_profile_details">
+									<h5>John Doe</h5>
+									<p>WP Developer</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="testimonial_box">
+							<p>I rarely like to write reviews, but the JFD team truly deserve a standing ovation for
+								their customer support, customisation and most importantly, friendliness and
+								professionalism. Many thanks once again for everything and hope that I get to deal with
+								you again in the near future. </p>
+							<div class="testimonial_profile">
+								<img src="assets/images/testmonial-1-1.jpg" alt="testmonial" class="testimonial_img">
+								<div class="testimonial_profile_details">
+									<h5>John Doe</h5>
+									<p>WP Developer</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="brands_sec" id="brand">
+			<div class="container">
+				<div class="owl-carousel">
+					<div class="item">
+						<div class="brand_img">
+							<img src="assets/images/l-1-1-1-1.png" alt="brnd">
+						</div>
+					</div>
+					<div class="item">
+						<div class="brand_img">
+							<img src="assets/images/l-1-1-1-1.png" alt="brnd">
+						</div>
+					</div>
+					<div class="item">
+						<div class="brand_img">
+							<img src="assets/images/l-1-1-1-1.png" alt="brnd">
+						</div>
+					</div>
+					<div class="item">
+						<div class="brand_img">
+							<img src="assets/images/l-1-1-1-1.png" alt="brnd">
+						</div>
+					</div>
+					<div class="item">
+						<div class="brand_img">
+							<img src="assets/images/l-1-1-1-1.png" alt="brnd">
+						</div>
+					</div>
+					<div class="item">
+						<div class="brand_img">
+							<img src="assets/images/l-1-1-1-1.png" alt="brnd">
+						</div>
+					</div>
+					<div class="item">
+						<div class="brand_img">
+							<img src="assets/images/l-1-1-1-1.png" alt="brnd">
+						</div>
+					</div>
+					<div class="item">
+						<div class="brand_img">
+							<img src="assets/images/l-1-1-1-1.png" alt="brnd">
+						</div>
+					</div>
+					<div class="item">
+						<div class="brand_img">
+							<img src="assets/images/l-1-1-1-1.png" alt="brnd">
+						</div>
+					</div>
+					<div class="item">
+						<div class="brand_img">
+							<img src="assets/images/l-1-1-1-1.png" alt="brnd">
+						</div>
+					</div>
+					<div class="item">
+						<div class="brand_img">
+							<img src="assets/images/l-1-1-1-1.png" alt="brnd">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="contact_sec" id="contact">
+			<div class="container">
+				<h5>Contact Me</h5>
+				<h2>Get in Touch</h2>
+				<p>Use the form to send a message, or contact me directly via phone <br> between 9:00 a.m. and 8:00 p.m.
+					ET, Monday to Friday.</p>
+				<div class="row contact_row">
+					<div class="col-md-6">
+						<div class="address_left">
+							<div class="address_box address_box1">
+								<span><i class="fa-solid fa-location-dot"></i></span>
+								<div class="address_details">
+									<h3>Address</h3>
+									<p><a href="https://maps.app.goo.gl/YxWFKEBe4BhYKv2P6" target="_blank">Kolkata</a></p>
+								</div>
+							</div>
+							<div class="address_box address_box2">
+								<span><i class="fa-solid fa-envelope"></i></span>
+								<div class="address_details">
+									<h3>Email</h3>
+									<p><a href="mailto:raben.haldar.1993@gmail.com">Raben.haldar.1993@gmail.com</a></p>
+								</div>
+							</div>
+							<div class="address_box address_box3">
+								<span><i class="fa-solid fa-phone"></i></span>
+								<div class="address_details">
+									<h3>Phone</h3>
+									<p><a href="tel:+919609034547">+919609034547</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<form action="">
+							<div class="row frm_row">
+								<div class="col-md-12 frm_item">
+									<input type="text" placeholder="Your Name" required>
+								</div>
+								<div class="col-md-12 frm_item">
+									<input type="email" placeholder="Your Email" required>
+								</div>
+								<div class="col-md-12 frm_item">
+									<input type="tel" placeholder="Your Phone" required>
+								</div>
+								<div class="col-md-12 frm_item">
+									<textarea placeholder="Subject" required></textarea>
+								</div>
+								<div class="col-md-12 frm_item">
+									<input type="submit" value="Submit" class="orngBtn">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="map_sec">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117925.21689594688!2d88.26494974350312!3d22.535564938158956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1736682900153!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</section>
+		<a href="#banner" class="back_to_top"><i class="fa-solid fa-angle-up"></i></a>
 	</main>
-
+	<footer class="footer_sec">
+		<div class="container">
+			<p>© 2024. Developed with love by <a href="#" target="_blank">Raben Haldar</a></p>
+		</div>
+	</footer>
 
 
 
@@ -391,6 +574,7 @@
 	</script>
 	<script src="assets/js/examples.js"></script>
 	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/jquery.malihu.PageScroll2id.js"></script>
 
 </body>
 

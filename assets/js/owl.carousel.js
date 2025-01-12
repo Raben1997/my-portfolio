@@ -1200,7 +1200,7 @@
         };
         (e.Defaults = {
             nav: !1,
-            navText: ['<span aria-label="Previous">&#x2039;</span>', '<span aria-label="Next">&#x203a;</span>'],
+            navText: ['<span aria-label="Previous"><i class="fa-solid fa-arrow-left"></i></span>', '<span aria-label="Next"><i class="fa-solid fa-arrow-right"></i></span>'],
             navSpeed: !1,
             navElement: 'button type="button" role="presentation"',
             navContainer: !1,
