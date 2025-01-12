@@ -399,6 +399,86 @@ p {
 .success_box h6 {
   padding-left: 15px;
 }
+.portfolio_sec {
+  padding: 80px 0;
+  text-align: center;
+  background: url("../images/color-1-1.png") no-repeat top left 150px,
+    url("../images/object-2-1-1.png") no-repeat bottom right 50px;
+}
+.portfolio_gallery {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  height: 450px;
+  margin-top: 24px;
+}
+.portfolio_gallery::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 0%;
+  height: 0%;
+  background: rgba(0, 0, 0, 0.7);
+  transition: 0.5s all;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 50%;
+}
+
+.gallery_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.portfolio_gallery_content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 30px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s all;
+}
+.portfolio_gallery:hover::before,
+.portfolio_gallery:hover .portfolio_gallery_content {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+  border-radius: 0%;
+}
+.portfolio_gallery:hover::before {
+  height: 100%;
+}
+.portfolio_gallery_content h5 {
+  padding-bottom: 15px;
+}
+.portfolio_gallery_content h5,
+.portfolio_gallery_content p {
+  color: #fff;
+}
+.gallery_links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 10px;
+}
+.gallery_links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f75023;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+}
 
 @media (min-width: 992px) and (max-width: 9000px) {
   .nav_top .dropdown > .dropdown-menu {
